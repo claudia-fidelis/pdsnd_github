@@ -32,3 +32,6 @@ I used the following files:
 ### Credits
 Repository that i forked to start this project: Link [here](https://github.com/udacity/pdsnd_github)
 
+### Requires
+
+You should have Python 3, NumPy, and pandas installed.
