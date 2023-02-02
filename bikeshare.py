@@ -185,11 +185,13 @@ def user_stats(df):
         count_gender = df['Gender'].value_counts().to_frame()
         print(f'The counts of user types is: \n {count_gender}\n')
 
-        # TO DO: Display earliest, most recent, and most common year of birth
+        # TO DO: Display earliest, most recent, most common and median os year of birth
         earliest = df['Birth Year'].min()
         recent = df['Birth Year'].max()
         common = df['Birth Year'].mode()[0]
-        print(f'The earliest year of birth is: {earliest}\n The most recent year of birth is: {recent}\n The most common year of birth is: {common}')
+        mediana = df['Birth Year'].median()
+         
+        print(f'The earliest year of birth is: {earliest}\n The most recent year of birth is: {recent}\n The most common year of birth is: {common} The median year of birth is: {mediana}')
 
     except:
         print('City Washington does not have information about gender end birth year.')
